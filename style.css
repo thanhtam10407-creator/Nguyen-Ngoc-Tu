@@ -9,13 +9,42 @@ nav ul { display: flex; list-style: none; gap: 20px; flex-wrap: wrap; }
 nav a { text-decoration: none; color: #4a5568; font-weight: 600; font-size: 0.85rem; transition: 0.3s; }
 nav a:hover { color: #2d6a4f; }
 
-/* Hero */
-.hero-section { padding: 140px 20px 80px; background: linear-gradient(135deg, #e8f5e9 0%, #fffde7 100%); text-align: center; }
-.hero-content { max-width: 800px; margin: 0 auto; }
+/* Hero Section có nền nghệ thuật & ảnh tròn */
+.hero-section { 
+  padding: 140px 20px 80px; 
+  background: linear-gradient(135deg, rgba(232, 245, 233, 0.95) 0%, rgba(255, 253, 231, 0.95) 100%), url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1600&auto=format&fit=crop'); 
+  background-size: cover;
+  background-position: center;
+  text-align: left; 
+}
+.hero-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-image-box {
+  flex-shrink: 0;
+}
+.author-avatar {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
 .sub-title { color: #b7791f; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
 .hero-text h1 { font-size: 3rem; color: #1b4332; margin: 10px 0; }
 .dates { color: #555; font-weight: 600; margin-bottom: 15px; }
-.desc { color: #4a5568; font-style: italic; margin-bottom: 25px; font-size: 1.1rem; }
+.desc { color: #4a5568; font-style: italic; margin-bottom: 25px; font-size: 1.05rem; }
 .btn-primary { display: inline-block; padding: 12px 28px; background-color: #2d6a4f; color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: 0.3s; }
 .btn-primary:hover { background-color: #1b4332; }
 
@@ -58,11 +87,9 @@ tr:hover { background: #f8fafc; }
 
 /* Radio Section */
 .center-text { text-align: center; margin-bottom: 25px; color: #555; }
-.radio-container { display: flex; justify-content: center; }
-.radio-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); width: 100%; max-width: 600px; text-align: center; }
+.radio-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
 .radio-box h3 { color: #1b4332; margin-bottom: 8px; }
 .radio-note { font-size: 0.85rem; color: #718096; margin-bottom: 20px; }
-.video-placeholder { background: #edf2f7; padding: 40px; border-radius: 8px; border: 2px dashed #cbd5e0; color: #4a5568; font-weight: 600; }
 
 /* Footer */
 footer { text-align: center; padding: 30px; background: #1b4332; color: #a3b18a; margin-top: 80px; font-size: 0.9rem; }
