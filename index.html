@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Học liệu số: Nhà văn Nguyễn Ngọc Tư</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Thanh điều hướng Topbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand">
+        <img src="assets/avatar.jpg" alt="Nguyễn Ngọc Tư">
+        <span>Nguyễn Ngọc Tư</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#hero">TRANG CHỦ</a></li>
+          <li><a href="#tieu-su">TIỂU SỬ & QUAN NIỆM</a></li>
+          <li><a href="#sang-tac">SÁNG TÁC</a></li>
+          <li><a href="#phong-cach">PHONG CÁCH</a></li>
+          <li><a href="#trich-dan">QUAN NIỆM - NHẬN ĐỊNH</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section 1: Hero Banner -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="avatar-wrapper">
+        <img src="assets/avatar.jpg" alt="Nhà văn Nguyễn Ngọc Tư">
+      </div>
+      <div class="hero-text">
+        <p class="sub-title">Nhà văn đương đại</p>
+        <h1>Nguyễn Ngọc Tư</h1>
+        <p class="dates">(1976 – Nay)</p>
+        <p class="desc">Một trong những cây bút xuất sắc nhất của văn học Việt Nam đương đại. Nguyễn Ngọc Tư mang hơi thở mộc mạc, tha thiết của vùng đất sông nước Cà Mau đến với đông đảo bạn đọc trong và ngoài nước.</p>
+        <a href="#tieu-su" class="btn-primary">Khám phá ngay</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Quote Banner -->
+  <section class="quote-section">
+    <blockquote>
+      "Tôi viết bằng nỗi băn khoăn về con người, về những số phận lênh đênh trên bến bãi cuộc đời."
+      <cite>— Nguyễn Ngọc Tư —</cite>
+    </blockquote>
+  </section>
+
+  <!-- Section 3: Dòng thời gian sự nghiệp -->
+  <section class="timeline-section">
+    <h2 class="section-title">Hành trình sự nghiệp</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="year">1976</div>
+        <div class="text">Sinh ra tại huyện Đầm Dơi, tỉnh Cà Mau.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2000</div>
+        <div class="text">Giải Nhất "Văn học tuổi 20" với tập truyện <i>Ngọn đèn không hắt bóng</i>.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2005</div>
+        <div class="text">Xuất bản <i>Cánh đồng bất tận</i> – tác phẩm tạo hiện tượng văn học lớn.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2008</div>
+        <div class="text">Nhận giải thưởng Văn học ASEAN (ASEAN Literatures Award).</div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">2018</div>
+        <div class="text">Nhận giải thưởng LiBeraturpreis (Đức) cho bản dịch <i>Endlose Felder</i>.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Chuyên mục dạng Tab (Tiểu sử, Con người, Quan niệm) -->
+  <section id="tieu-su" class="content-section">
+    <h2 class="section-title">Tiểu sử & Quan niệm nghệ thuật</h2>
+    <div class="tab-buttons">
+      <button class="tab-btn active" onclick="openTab(event, 'tab-tieusu')">Tiểu sử</button>
+      <button class="tab-btn" onclick="openTab(event, 'tab-connguoi')">Con người</button>
+      <button class="tab-btn" onclick="openTab(event, 'tab-quanniem')">Quan niệm nghệ thuật</button>
+    </div>
+
+    <div id="tab-tieusu" class="tab-content active">
+      <h3>Tiểu sử</h3>
+      <p>Nguyễn Ngọc Tư sinh năm 1976 tại xã Tân Duyệt, huyện Đầm Dơi, tỉnh Cà Mau. Sinh ra trong một gia đình nông dân, chị không qua trường lớp đào tạo viết văn chuyên nghiệp mà trưởng thành từ chính vốn sống, sự tự học và trải nghiệm sông nước quê hương.</p>
+      <p>Chị từng làm việc tại Hội Văn học Nghệ thuật Cà Mau, viết báo và sáng tác truyện ngắn. Năm 2005, tập truyện ngắn <i>Cánh đồng bất tận</i> ra đời đã đưa tên tuổi của chị lên vị trí hàng đầu trong nền văn học đương đại.</p>
+    </div>
+
+    <div id="tab-connguoi" class="tab-content">
+      <h3>Con người</h3>
+      <p>Nguyễn Ngọc Tư nổi tiếng là một nhà văn sống khép kín, mộc mạc và tránh xa những ồn ào truyền thông. Chị chọn gắn bó trọn vẹn cuộc sống của mình với mảnh đất Cà Mau tận cùng Tổ quốc.</p>
+      <p>Chị có cái nhìn đầy bao dung, trắc ẩn đối với những con người lao động nghèo khổ. Bằng sự nhạy cảm tinh tế, chị lắng nghe và đồng cảm sâu sắc với nỗi đau, sự cô đơn của những kiếp người nhỏ bé.</p>
+    </div>
+
+    <div id="tab-quanniem" class="tab-content">
+      <h3>Quan niệm nghệ thuật</h3>
+      <p>Với Nguyễn Ngọc Tư, văn chương không phải là nơi phô diễn kỹ thuật cầu kỳ mà là nơi gửi gắm nỗi băn khoăn trăn trở về thân phận con người.</p>
+      <p>Chị quan niệm sáng tác phải bắt nguồn từ những rung cảm chân thành nhất trước đời sống. Văn chương phải chân thật, hướng về những mảnh đời khuất lấp và đánh thức lòng trắc ẩn trong tâm hồn đọc giả.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© Học liệu số Văn học Việt Nam - Chuyên đề Nhà văn Nguyễn Ngọc Tư</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
