@@ -12,103 +12,182 @@
   <header class="navbar">
     <div class="nav-container">
       <a href="#hero" class="brand">
-        <img src="assets/avatar.jpg" alt="Nguyễn Ngọc Tư">
         <span>Nguyễn Ngọc Tư</span>
       </a>
       <nav>
         <ul>
           <li><a href="#hero">TRANG CHỦ</a></li>
-          <li><a href="#tieu-su">TIỂU SỬ & QUAN NIỆM</a></li>
+          <li><a href="#tieu-su">TIỂU SỬ & CON NGƯỜI</a></li>
+          <li><a href="#quan-niem">QUAN NIỆM</a></li>
           <li><a href="#sang-tac">SÁNG TÁC</a></li>
+          <li><a href="#vi-tri">VỊ TRÍ & ĐÓNG GÓP</a></li>
           <li><a href="#phong-cach">PHONG CÁCH</a></li>
-          <li><a href="#trich-dan">QUAN NIỆM - NHẬN ĐỊNH</a></li>
+          <li><a href="#radio">RADIO VĂN HỌC</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Section 1: Hero Banner -->
+  <!-- Hero Section -->
   <section id="hero" class="hero-section">
     <div class="hero-content">
-      <div class="avatar-wrapper">
-        <img src="assets/avatar.jpg" alt="Nhà văn Nguyễn Ngọc Tư">
-      </div>
       <div class="hero-text">
-        <p class="sub-title">Nhà văn đương đại</p>
+        <p class="sub-title">Nhà văn đương đại Việt Nam</p>
         <h1>Nguyễn Ngọc Tư</h1>
-        <p class="dates">(1976 – Nay)</p>
-        <p class="desc">Một trong những cây bút xuất sắc nhất của văn học Việt Nam đương đại. Nguyễn Ngọc Tư mang hơi thở mộc mạc, tha thiết của vùng đất sông nước Cà Mau đến với đông đảo bạn đọc trong và ngoài nước.</p>
-        <a href="#tieu-su" class="btn-primary">Khám phá ngay</a>
+        <p class="dates">(Sinh năm 1976 – Đầm Dơi, Cà Mau)</p>
+        <p class="desc">"Văn chương rất quý giá, nhưng tự do còn quý hơn." – Một ngọn gió chướng mang hơi thở mộc mạc, tha thiết của vùng sông nước Nam Bộ vào văn học đương đại[cite: 9].</p>
+        <a href="#tieu-su" class="btn-primary">Khám phá học liệu</a>
       </div>
     </div>
   </section>
 
-  <!-- Section 2: Quote Banner -->
+  <!-- Quote Banner -->
   <section class="quote-section">
     <blockquote>
-      "Tôi viết bằng nỗi băn khoăn về con người, về những số phận lênh đênh trên bến bãi cuộc đời."
-      <cite>— Nguyễn Ngọc Tư —</cite>
+      "Văn học và đời sống là những vòng tròn đồng tâm mà tâm điểm là con người. Tôi viết bằng nỗi băn khoăn về con người, về những số phận lênh đênh trên bến bãi cuộc đời."
     </blockquote>
   </section>
 
-  <!-- Section 3: Dòng thời gian sự nghiệp -->
+  <!-- Timeline Sự nghiệp -->
   <section class="timeline-section">
-    <h2 class="section-title">Hành trình sự nghiệp</h2>
+    <h2 class="section-title">Dòng thời gian & Dấu mốc tiêu biểu</h2>
     <div class="timeline">
-      <div class="timeline-item">
-        <div class="year">1976</div>
-        <div class="text">Sinh ra tại huyện Đầm Dơi, tỉnh Cà Mau.</div>
+      <div class="timeline-item"><div class="year">2000</div><div class="text">Giải Nhất cuộc vận động sáng tác Văn học tuổi 20 lần II với tập truyện <i>Ngọn đèn không tắt</i> (Giải B Hội Nhà văn VN 2001)[cite: 9].</div></div>
+      <div class="timeline-item"><div class="year">2005</div><div class="text">Xuất bản <i>Cánh đồng bất tận</i> – tiếng vang lớn trong đời sống văn học (Giải thưởng Hội Nhà văn VN 2006)[cite: 9].</div></div>
+      <div class="timeline-item"><div class="year">2008</div><div class="text">Đoạt giải thưởng <b>Văn học ASEAN</b> (ASEAN Literatures Award)[cite: 9].</div></div>
+      <div class="timeline-item"><div class="year">2018</div><div class="text">Nhận giải thưởng <b>LiBeraturpreis</b> (Đức) cho bản dịch tác phẩm <i>Cánh đồng bất tận</i>[cite: 9].</div></div>
+      <div class="timeline-item"><div class="year">2024</div><div class="text">Đoạt giải thưởng văn học tại Trung Quốc với truyện ngắn <i>Những biển</i>[cite: 9].</div></div>
+    </div>
+  </section>
+
+  <!-- Phần I & II: Tiểu sử, Con người & Quan niệm -->
+  <section id="tieu-su" class="content-section">
+    <h2 class="section-title">Tiểu sử, Con người & Quan niệm nghệ thuật</h2>
+    <div class="tab-buttons">
+      <button class="tab-btn active" onclick="openTab(event, 'tab-ts')">Tiểu sử & Không gian</button>
+      <button class="tab-btn" onclick="openTab(event, 'tab-cn')">Chân dung con người</button>
+      <button class="tab-btn" onclick="openTab(event, 'tab-qn')">Quan niệm nghệ thuật</button>
+    </div>
+
+    <div id="tab-ts" class="tab-content active">
+      <h3>1. Thông tin khái quát</h3>
+      <p>Nguyễn Ngọc Tư sinh năm 1976 tại Đầm Dơi, Cà Mau. Trưởng thành từ vùng đất cực Nam Tổ quốc với hệ thống sông ngòi, kênh rạch chằng chịt và những cánh đồng rộng lớn, chị có được nguồn chất liệu phong phú thấm đẫm vào từng trang viết[cite: 9].</p>
+    </div>
+    <div id="tab-connguoi" class="tab-content"></div> <!-- fallback -->
+    <div id="tab-cn" class="tab-content">
+      <h3>2. Con người Nguyễn Ngọc Tư</h3>
+      <p><b>Giản dị, chân thành:</b> Gắn bó mật thiết với đời sống người lao động bình thường[cite: 9].</p>
+      <p><b>Nhạy cảm, trắc ẩn:</b> Nặng lòng với những phận người thiệt thòi, phụ nữ bất hạnh, trẻ em thiếu thốn tình thương[cite: 9].</p>
+      <p><b>Ý thức độc lập & nghiêm túc:</b> Không lặp lại chính mình, luôn tìm tòi cách thể hiện mới và coi trọng trách nhiệm cao với chữ nghĩa[cite: 9].</p>
+    </div>
+    <div id="tab-qn" class="tab-content" style="display:none"></div>
+  </section>
+
+  <section id="quan-niem" class="content-section">
+    <div class="card-grid">
+      <div class="card">
+        <h3>🌱 Gắn bó với đời sống</h3>
+        <p>Văn chương phải bắt nguồn từ hiện thực đời thường, từ những câu chuyện nhỏ bé để mở ra vấn đề nhân sinh sâu sắc[cite: 9].</p>
       </div>
-      <div class="timeline-item">
-        <div class="year">2000</div>
-        <div class="text">Giải Nhất "Văn học tuổi 20" với tập truyện <i>Ngọn đèn không hắt bóng</i>.</div>
+      <div class="card">
+        <h3>❤️ Giá trị nhân văn</h3>
+        <p>Hướng tới con người, không phán xét đạo đức áp đặt mà để nhân vật tự bộc lộ, khơi gợi sự cảm thông sâu sắc[cite: 9].</p>
       </div>
-      <div class="timeline-item">
-        <div class="year">2005</div>
-        <div class="text">Xuất bản <i>Cánh đồng bất tận</i> – tác phẩm tạo hiện tượng văn học lớn.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="year">2008</div>
-        <div class="text">Nhận giải thưởng Văn học ASEAN (ASEAN Literatures Award).</div>
-      </div>
-      <div class="timeline-item">
-        <div class="year">2018</div>
-        <div class="text">Nhận giải thưởng LiBeraturpreis (Đức) cho bản dịch <i>Endlose Felder</i>.</div>
+      <div class="card">
+        <h3>🕊️ Tự do sáng tạo</h3>
+        <p><i>"Văn chương rất quý giá, nhưng tự do còn quý hơn."</i> – Tinh thần đổi mới, không chịu gò bó trong khuôn mẫu cũ[cite: 9].</p>
       </div>
     </div>
   </section>
 
-  <!-- Section 4: Chuyên mục dạng Tab (Tiểu sử, Con người, Quan niệm) -->
-  <section id="tieu-su" class="content-section">
-    <h2 class="section-title">Tiểu sử & Quan niệm nghệ thuật</h2>
-    <div class="tab-buttons">
-      <button class="tab-btn active" onclick="openTab(event, 'tab-tieusu')">Tiểu sử</button>
-      <button class="tab-btn" onclick="openTab(event, 'tab-connguoi')">Con người</button>
-      <button class="tab-btn" onclick="openTab(event, 'tab-quanniem')">Quan niệm nghệ thuật</button>
+  <!-- Phần III: Hành trình sáng tác & Tác phẩm tiêu biểu -->
+  <section id="sang-tac" class="content-section">
+    <h2 class="section-title">Hành trình sáng tác & Tác phẩm tiêu biểu</h2>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Tác phẩm</th>
+          <th>Thể loại</th>
+          <th>Đặc điểm nổi bật</th>
+        </tr>
+        <tr>
+          <td><b>Ngọn đèn không tắt</b>[cite: 9]</td>
+          <td>Truyện ngắn[cite: 9]</td>
+          <td>Dấu mốc đầu tiên, giải Nhất Văn học tuổi 20 (2000)[cite: 9].</td>
+        </tr>
+        <tr>
+          <td><b>Cánh đồng bất tận</b>[cite: 9]</td>
+          <td>Truyện vừa[cite: 9]</td>
+          <td>Bi kịch gia đình, tổn thương tâm lý và khát vọng hạnh phúc[cite: 9].</td>
+        </tr>
+        <tr>
+          <td><b>Sông</b>[cite: 9]</td>
+          <td>Tiểu thuyết[cite: 9]</td>
+          <td>Hành trình tìm kiếm và suy tư sâu sắc về sự tồn tại[cite: 9].</td>
+        </tr>
+        <tr>
+          <td><b>Biên sử nước</b>[cite: 9]</td>
+          <td>Tiểu thuyết[cite: 9]</td>
+          <td>Kết cấu đa tầng, suy tư triết lý về thiên nhiên và con người[cite: 9].</td>
+        </tr>
+        <tr>
+          <td><b>Tiếng gọi chân trời</b>[cite: 9]</td>
+          <td>Tản văn[cite: 9]</td>
+          <td>Khát vọng tự do, cảm thức về thiên nhiên và con người[cite: 9].</td>
+        </tr>
+      </table>
     </div>
+  </section>
 
-    <div id="tab-tieusu" class="tab-content active">
-      <h3>Tiểu sử</h3>
-      <p>Nguyễn Ngọc Tư sinh năm 1976 tại xã Tân Duyệt, huyện Đầm Dơi, tỉnh Cà Mau. Sinh ra trong một gia đình nông dân, chị không qua trường lớp đào tạo viết văn chuyên nghiệp mà trưởng thành từ chính vốn sống, sự tự học và trải nghiệm sông nước quê hương.</p>
-      <p>Chị từng làm việc tại Hội Văn học Nghệ thuật Cà Mau, viết báo và sáng tác truyện ngắn. Năm 2005, tập truyện ngắn <i>Cánh đồng bất tận</i> ra đời đã đưa tên tuổi của chị lên vị trí hàng đầu trong nền văn học đương đại.</p>
+  <!-- Phần IV & V: Vị trí & Phong cách nghệ thuật -->
+  <section id="vi-tri" class="content-section">
+    <h2 class="section-title">Vị trí & Đóng góp nghệ thuật</h2>
+    <ul class="styled-list">
+      <li><b>Khẳng định văn học Nam Bộ:</b> Đưa văn hóa, sông nước và con người miền Tây vươn tầm quốc gia và quốc tế[cite: 9].</li>
+      <li><b>Trung tâm là phận người nhỏ bé:</b> Biến những con người vô danh, chịu nhiều tổn thương thành chủ thể trung tâm của trang sách[cite: 9].</li>
+      <li><b>Tư duy sinh thái:</b> Thiên nhiên gắn bó mật thiết, mang số phận và hơi thở cùng con người (vấn đề môi trường, sinh kế)[cite: 9].</li>
+      <li><b>Cách tân nghệ thuật tự sự:</b> Vận động từ kết cấu truyền thống sang cấu trúc phân mảnh, đa tầng, đa điểm nhìn[cite: 9].</li>
+    </ul>
+  </section>
+
+  <section id="phong-cach" class="content-section">
+    <h2 class="section-title">Phong cách nghệ thuật</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>🌿 Ngôn từ & Giọng điệu</h3>
+        <p>Mộc mạc, đậm chất phương ngữ Nam Bộ, giàu khẩu ngữ; giọng điệu linh hoạt: khi trữ tình, lúc xót xa, chua chát hoặc triết lý sâu lắng[cite: 9].</p>
+      </div>
+      <div class="card">
+        <h3>👁️ Cái nhìn nghệ thuật</h3>
+        <p>Kết hợp nhuần nhuyễn giữa cảm hứng nhân văn dạt dào và cái nhìn hiện thực sắc lạnh, tỉnh táo trước những nghịch lý đời sống[cite: 9].</p>
+      </div>
+      <div class="card">
+        <h3>🌊 Không gian biểu tượng</h3>
+        <p>Không gian sông nước, bến sông, chuyến đi trôi dạt mang ý nghĩa biểu tượng sâu sắc về hành trình nhân sinh[cite: 9].</p>
+      </div>
     </div>
+  </section>
 
-    <div id="tab-connguoi" class="tab-content">
-      <h3>Con người</h3>
-      <p>Nguyễn Ngọc Tư nổi tiếng là một nhà văn sống khép kín, mộc mạc và tránh xa những ồn ào truyền thông. Chị chọn gắn bó trọn vẹn cuộc sống của mình với mảnh đất Cà Mau tận cùng Tổ quốc.</p>
-      <p>Chị có cái nhìn đầy bao dung, trắc ẩn đối với những con người lao động nghèo khổ. Bằng sự nhạy cảm tinh tế, chị lắng nghe và đồng cảm sâu sắc với nỗi đau, sự cô đơn của những kiếp người nhỏ bé.</p>
-    </div>
-
-    <div id="tab-quanniem" class="tab-content">
-      <h3>Quan niệm nghệ thuật</h3>
-      <p>Với Nguyễn Ngọc Tư, văn chương không phải là nơi phô diễn kỹ thuật cầu kỳ mà là nơi gửi gắm nỗi băn khoăn trăn trở về thân phận con người.</p>
-      <p>Chị quan niệm sáng tác phải bắt nguồn từ những rung cảm chân thành nhất trước đời sống. Văn chương phải chân thật, hướng về những mảnh đời khuất lấp và đánh thức lòng trắc ẩn trong tâm hồn đọc giả.</p>
+  <!-- Phần VI: Radio Văn học (Nơi nhúng video TikTok / YouTube) -->
+  <section id="radio" class="content-section">
+    <h2 class="section-title">Radio Văn học & Tư liệu số</h2>
+    <p class="center-text">Không gian thưởng thức các trích đoạn tác phẩm, bình luận văn học và video tư liệu:</p>
+    
+    <div class="radio-container">
+      <!-- Mẫu khung nhúng video (TikTok hoặc YouTube) -->
+      <div class="radio-box">
+        <h3>Trích đoạn: Cánh đồng bất tận</h3>
+        <p class="radio-note">Bạn có thể thay thế khung này bằng mã nhúng (embed) video TikTok hoặc YouTube bất kỳ.</p>
+        <div class="video-placeholder">
+          <p>🎥 [Khu vực hiển thị Video / Podcast TikTok]</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© Học liệu số Văn học Việt Nam - Chuyên đề Nhà văn Nguyễn Ngọc Tư</p>
+    <p>© 2026 Học liệu số Ngữ văn - Chuyên đề Nhà văn Nguyễn Ngọc Tư</p>
   </footer>
 
   <script src="script.js"></script>
