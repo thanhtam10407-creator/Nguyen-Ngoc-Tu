@@ -1,0 +1,220 @@
+/* Định dạng chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fcfbfa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Menu */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2c5e3b;
+}
+
+.brand img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #2c5e3b;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 120px 20px 60px;
+  background: linear-gradient(135deg, #e8f5e9 0%, #fff8e1 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.avatar-wrapper img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #1b4332;
+}
+
+.hero-text .sub-title {
+  color: #85581A;
+  font-weight: bold;
+}
+
+.hero-text .desc {
+  margin: 15px 0;
+  color: #4a5568;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #2c5e3b;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #1b4332;
+}
+
+/* Quote Banner */
+.quote-section {
+  background: #2c5e3b;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+/* Timeline */
+.timeline-section, .content-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1b4332;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 15px 20px;
+  border-left: 4px solid #2c5e3b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.timeline-item .year {
+  font-weight: bold;
+  color: #85581A;
+  min-width: 60px;
+}
+
+/* Tab System */
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.tab-btn.active {
+  background: #2c5e3b;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e8f5e9;
+  color: #555;
+  margin-top: 60px;
+}
